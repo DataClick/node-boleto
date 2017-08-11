@@ -172,11 +172,11 @@
             <td class="cpN Ar">Recibo do Pagador</td>
         </tr>
         <tr>
-            <td class="cpN Ar"><%= boleto['cabecalho'] %></td>
+            <td class="cpN Ar"><%- boleto['cabecalho'] %></td>
         </tr>
     </table><br /><table class="w666">
         <tr class="BHead">
-			<td class="imgLogo Al"><img src="<%= logoURL %>" /></td>
+			<td class="imgLogo Al"><img src="<%= ejs.render(logoURL) %>" /></td>
             <td class="barra"></td>
 			<td class="w72 Ab bc Ac"><%= boleto['codigo_banco'] %></td>
             <td class="barra"></td>
